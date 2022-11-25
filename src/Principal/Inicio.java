@@ -12,7 +12,17 @@ public class Inicio {
 
         datos.pedirDatos();
         datos.mostrarPersona();
-        datos.calcularImc();
+        String resultado = datos.calculoImc();
+
+        if(resultado.equalsIgnoreCase("Peso bajo")){
+            System.out.println("Estas bajo de peso");
+        }
+        else if (resultado.equalsIgnoreCase("Peso ideal")){
+            System.out.println("Estas en el peso ideal");
+        }
+        else{
+            System.out.println("Estas en sobrepeso");
+        }
         datos.mayorEdad();
         leer.close();
     }

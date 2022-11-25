@@ -7,7 +7,7 @@ public class Persona {
     //atributos
     
     public int documento,edad;
-    public String nombre,apellido,sexo,tipoDoc;
+    public String nombre,apellido,sexo,tipoDoc,resultado;
     public Double peso,pesoactual,estatura;
     // metdodos
     public void pedirDatos(){
@@ -33,7 +33,7 @@ public class Persona {
         System.out.println("los datos que usted ingreso fueron\n tipo de documento :"+tipoDoc+"\n numero de cedula :"+documento+"\n nombre:"+nombre+"\n apellido: "+apellido+"\n peso:"+peso+"\n estatura : "+estatura+"\n edad : "+edad+"\n sexo : "+sexo);
         
     }
-    public void calcularImc(){
+    /*public void calcularImc(){
         pesoactual=peso/(Math.pow(estatura, 2));
         System.out.println(pesoactual);
         
@@ -47,6 +47,21 @@ public class Persona {
             System.out.println("Tiene sobrepeso");  
         }
         
+    }*/
+    public String calculoImc(){
+        pesoactual = peso / Math.pow(estatura, 2);
+        if(pesoactual < 20){
+            resultado = "Peso bajo";
+        }
+        else if (pesoactual == 20  || pesoactual <=25){
+            resultado = "Peso ideal";
+        }
+        else {
+            resultado = "Sobrepeso";
+        }
+
+        return resultado;
+
     }
 
     public void mayorEdad (){
