@@ -1,6 +1,6 @@
-package SENA;
+package Sena;
 
-import conceptos.Animal;
+import Conceptos.Animal;
 
 public class PruebaAnimal {
     public static void main(String[] args) {

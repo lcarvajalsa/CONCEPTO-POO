@@ -1,4 +1,4 @@
-package conceptos;
+package Conceptos;
 
 import java.util.Scanner;
 

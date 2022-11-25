@@ -1,3 +1,4 @@
+package Sena;
 import java.util.Scanner;
 
 public class Calculadora {
@@ -32,6 +33,7 @@ public class Calculadora {
             System.out.println("El numero mayor es "+num1);
         }
         return numero;
+
     }
     //4.Método sin valor de retorno que devuelva ¿Cuál es el número menor?
     public void menorNumero(){
@@ -52,6 +54,7 @@ public class Calculadora {
         exponum1=(Math.pow(num1, exponum1));
         System.out.println("Su resultado es "+exponum1);
         return exponum1;
+
     }
     public double exponum2(){
         Scanner leer=new Scanner(System.in);
@@ -60,5 +63,7 @@ public class Calculadora {
         exponum2=(Math.pow(num1, exponum2));
         System.out.println("Su resultado es "+exponum2);
         return exponum2;
+        
+
     }
 }

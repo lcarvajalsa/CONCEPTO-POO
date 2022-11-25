@@ -1,4 +1,4 @@
-package conceptos;
+package Conceptos;
 
 public class Fecha {
     

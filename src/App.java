@@ -1,15 +1,11 @@
-//import SENA.Aprendiz;
+import Conceptos.Animal;
+import Sena.Aprendiz;
 
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
-        //Crear una instancia de clase o un objeto
-       // Animal tigre=new Animal();
-        //intabciar la clase Aprendiz
-        //Aprendiz yessika=new Aprendiz();
-        
-
-        
-        
+        //crear una instancia de clase u objeto    
+        Animal tigre=new Animal();
+        Aprendiz cedula=new Aprendiz();
     }
 }
