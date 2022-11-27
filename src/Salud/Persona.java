@@ -2,7 +2,7 @@ package Salud;
 
 import java.util.Scanner;
 
-public class Personal {
+public class Persona {
     Scanner leer=new Scanner(System.in);
     //atributos
     public int documento,edad,tipoDoc;
