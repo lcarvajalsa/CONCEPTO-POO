@@ -1,11 +1,8 @@
-package Sena;
 import java.util.Scanner;
-
 public class Calculadora {
     //Atributos
     int num1,num2;
     double exponum1,exponum2;
-
     //Método
     public void pregunta(){
         Scanner leer=new Scanner(System.in);

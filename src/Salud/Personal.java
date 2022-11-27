@@ -2,41 +2,38 @@ package Salud;
 
 import java.util.Scanner;
 
-public class Persona {
+public class Personal {
     Scanner leer=new Scanner(System.in);
     //atributos
-    
-    public int documento,edad;
-    public String nombre,apellido,sexo,tipoDoc,resultado;
+    public int documento,edad,tipoDoc;
+    public String nombre,apellido,sexo,resultado;
     public Double peso,pesoactual,estatura;
     // metdodos
     public void pedirDatos(){
-        System.out.println("ingrese su tipo de documento");
-        tipoDoc=leer.next();
-        System.out.println("ingrese el numero de su documento ");
+        System.out.println("Ingrese su tipo de documento");
+        tipoDoc=leer.nextInt();
+        
+        System.out.println("Ingrese el numero de su documento ");
         documento=leer.nextInt();
-        System.out.println("ingrese el numero de su nombre ");
+        System.out.println("Ingrese el numero de su nombre ");
         nombre=leer.next();
-        System.out.println("ingrese el numero de su apellido");
+        System.out.println("Ingrese el numero de su apellido ");
         apellido=leer.next();
-        System.out.println("ingrese su peso en kilogramos ");
+        System.out.println("Ingrese su peso en kilogramos ");
         peso=leer.nextDouble();
-        System.out.println("ingrese su estatura en centimetros ");
+        System.out.println("Ingrese su estatura en centimetros ");
         estatura=leer.nextDouble();
-        System.out.println("ingrese su edad");
+        System.out.println("Ingrese su edad ");
         edad=leer.nextInt();
-        System.out.println("ingrese el sexo que usted se considera ");
+        System.out.println("Ingrese el sexo que usted se considera ");
         sexo=leer.next();
-
     }
     public void mostrarPersona(){
-        System.out.println("los datos que usted ingreso fueron\n tipo de documento :"+tipoDoc+"\n numero de cedula :"+documento+"\n nombre:"+nombre+"\n apellido: "+apellido+"\n peso:"+peso+"\n estatura : "+estatura+"\n edad : "+edad+"\n sexo : "+sexo);
-        
+        System.out.println("los datos que usted ingreso fueron\n Tipo de documento :"+tipoDoc+"\n Numero de cedula :"+documento+"\n Nombre:"+nombre+"\n Apellido: "+apellido+"\n Peso:"+peso+"\n Estatura : "+estatura+"\n Edad : "+edad+"\n Sexo : "+sexo);
     }
     /*public void calcularImc(){
         pesoactual=peso/(Math.pow(estatura, 2));
         System.out.println(pesoactual);
-        
         if (pesoactual < 20){
             System.out.println("el peso esta por debajo de lo ideal");
         }
@@ -46,9 +43,8 @@ public class Persona {
         else {
             System.out.println("Tiene sobrepeso");  
         }
-        
     }*/
-    public String calculoImc(){
+    public String calcularImc(){
         pesoactual = peso / Math.pow(estatura, 2);
         if(pesoactual < 20){
             resultado = "Peso bajo";
@@ -59,11 +55,8 @@ public class Persona {
         else {
             resultado = "Sobrepeso";
         }
-
         return resultado;
-
     }
-
     public void mayorEdad (){
         if (edad > 18){
             System.out.println("Eres mayor de edad");
@@ -72,7 +65,5 @@ public class Persona {
             System.out.println("Es menor de edad");
         }
     }
-
-
-    
 }
+
