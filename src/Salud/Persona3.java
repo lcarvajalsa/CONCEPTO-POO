@@ -7,62 +7,27 @@ public class Persona3 {
     //Atributos
     public int tipoDocumento;
     public int documento;
-    String nombre;
-    String apellido;
+    public String nombre;
+    public String apellido;
     int peso;
     double estatura;
     int edad;
     int sexo;
     double pesoactual;
     String resultado;
+    
     //Constructor vacio
     public Persona3(){
-        System.out.println("Ingrese su tipo de documento 1. CC 2. TI 3. RC ");
-        tipoDocumento=leer.nextInt();
-        if (tipoDocumento==1){
-            System.out.println("Marcaste como tipo de documento Cedula de Ciudadania ");
-        }
-        else if (tipoDocumento==2){
-            System.out.println("Marcaste como tipo de documento Tarjeta de Identidad ");
-        }
-        else if (tipoDocumento==3){
-            System.out.println("Marcaste como tipo de documento Registro Civil ");
-        }
-        else{
-            System.out.println("Confirma los diferentes tipos de identificación y confirma nuevamente ");
-        }
-        System.out.println("Digite documento");
-        documento=leer.nextInt();
-        leer.nextLine();
-        System.out.println("Digite nombre");
-        nombre=leer.nextLine();
-        System.out.println("Digite apellido");
-        apellido=leer.nextLine();
-        System.out.println("Digite peso");
-        peso=leer.nextInt();
-        System.out.println("Digite estatura");
-        estatura=leer.nextDouble();
-        System.out.println("Digite edad");
-        edad=leer.nextInt();
-        System.out.println("Digite sexo 1. Masculino 2. Femenino 3. Neutro");
-        sexo=leer.nextInt();
-        if (sexo==1){
-            System.out.println("Marcaste el genero Masculino");
-        }
-        else if (sexo==2){
-            System.out.println("Marcaste el genero Masculino");
-        }
-        else if (sexo==3){
-            System.out.println("Marcaste el genero Masculino");
-        }
-        else{
-            System.out.println("Confirma los diferentes tipos de sexo y confirma nuevamente ");
-        }
+       
     }
     //Constructor con argumentos
     public Persona3(int tipoDocumento,int documento){
-        this.tipoDocumento=1;
-        this.documento=79922691;
+        this.tipoDocumento=tipoDocumento;
+        this.documento=documento;
+    }
+    public Persona3(String nombre,String apellido){
+        this.nombre=nombre;
+        this.apellido=apellido;
     }
     //Metodos
     public void pedirDatos(){

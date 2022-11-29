@@ -44,7 +44,7 @@ public class Persona {
             System.out.println("Tiene sobrepeso");  
         }
     }*/
-    public String calcularImc(){
+    public String calculoImc(){
         pesoactual = peso / Math.pow(estatura, 2);
         if(pesoactual < 20){
             resultado = "Peso bajo";
