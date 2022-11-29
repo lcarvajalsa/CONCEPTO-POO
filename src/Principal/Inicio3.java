@@ -7,13 +7,8 @@ public class Inicio3 {
 
 
     //metodo contructor de retorno
-        Persona3 llamar=new Persona3(1,1014211425);
-            System.out.println("Tipo de identificacion "+llamar.tipoDocumento);
-            System.out.println("Numero de identificacion "+llamar.documento);
-        Persona3 ejecuta1=new Persona3("Luis","Carvajal");
-            System.out.println("Tipo de identificacion "+ejecuta1.nombre);
-            System.out.println("Numero de identificacion "+ejecuta1.apellido);
-        
+        Persona3 llamar1 = new Persona3("Cc", "79922691","Luis", "Carvajal", 68, 1.68, 41);
+        llamar1.consultarPersona("Luis");
     }
 }
         
