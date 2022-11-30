@@ -9,35 +9,38 @@ public class Persona4 {
     private String documento;
     private String nombre;
     private String apellido;
-    private String peso;
+    private double peso;
     private double estatura;
     private String edad;
     private String sexo;
-    private double pesoactual;
+    /*private double pesoactual;
     private String resultado;
     //Constructor vacio
-    public Persona4(){
+    /*public Persona4(){
         System.out.println("Ingrese su tipo de documento 1. CC 2. TI 3. RC ");
-        tipoDocumento=leer.nextLine();
+        tipoDocumento=leer.nextInt();
         System.out.println("Digite documento");
-        documento=leer.nextLine();
+        documento=leer.nextInt();
         leer.nextLine();
         System.out.println("Digite nombre");
         nombre=leer.nextLine();
         System.out.println("Digite apellido");
         apellido=leer.nextLine();
         System.out.println("Digite peso");
-        peso=leer.nextLine();
+        peso=leer.nextInt();
         System.out.println("Digite estatura");
         estatura=leer.nextDouble();
         System.out.println("Digite edad");
-        edad=leer.nextLine();
+        edad=leer.nextInt();
         System.out.println("Digite sexo 1. Masculino 2. Femenino 3. Neutro");
-        sexo=leer.nextLine();
+        sexo=leer.nextInt();
         
+    }*/
+    public Persona4(){
+
     }
     //Constructor con argumentos
-    public Persona4(String tipoDocumento,String documento,String nombre,String apellido,String peso,double estatura,String edad,String sexo){
+    public Persona4(String tipoDocumento,String documento,String nombre,String apellido,double peso,double estatura,String edad,String sexo){
     this.tipoDocumento=tipoDocumento;
     this.documento=documento;
     this.nombre=nombre;
@@ -72,10 +75,10 @@ public class Persona4 {
     public void setApellido(String apellido){
         this.apellido=apellido;
     }
-    public String getPeso(){
+    public double getPeso(){
         return this.peso;
     }
-    public void setPesoe(String peso){
+    public void setPesoe(Double peso){
         this.peso=peso;
     }
     public double getEstatura(){
